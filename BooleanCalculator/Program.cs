@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections;
-class Program
+
+namespace BooleanCalculator;
+internal class Program
 {
     static bool Evaluate(string expr)
     {
-        Stack<bool> stack = new Stack<bool>();
+        var stack = new Stack<bool>();
         bool lhs, rhs;
 
         foreach (char c in expr)
@@ -49,13 +51,13 @@ class Program
         return stack.Pop();
     }
 
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
-        string example1 = "tf!&";
-        string example2 = "ff|ft!||";
-        string example3 = "tf|tf&!f?";
-        string example4 = "tf&|";
-        string example5 = "tf|t";
+        var example1 = "tf!&";
+        var example2 = "ff|ft!||";
+        var example3 = "tf|tf&!f?";
+        var example4 = "tf&|";
+        var example5 = "tf|t";
 
         try
         {

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OefentoetsAds", "OefentoetsAds\OefentoetsAds.csproj", "{73E0FB5D-8C82-4956-93C5-7F35963096D9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepCopy", "DeepCopy\DeepCopy.csproj", "{C2F85903-C596-4AE3-B86F-97CDE49CC84E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooleanCalculator", "BooleanCalculator\BooleanCalculator.csproj", "{A50C4AF1-734B-4AA6-8B37-8B2994D0C1E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameTreeNode", "GameTreeNode\GameTreeNode.csproj", "{AE31CAD1-5D9C-4340-A90C-C4D0A53435CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{73E0FB5D-8C82-4956-93C5-7F35963096D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73E0FB5D-8C82-4956-93C5-7F35963096D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73E0FB5D-8C82-4956-93C5-7F35963096D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73E0FB5D-8C82-4956-93C5-7F35963096D9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C2F85903-C596-4AE3-B86F-97CDE49CC84E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C2F85903-C596-4AE3-B86F-97CDE49CC84E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2F85903-C596-4AE3-B86F-97CDE49CC84E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{A50C4AF1-734B-4AA6-8B37-8B2994D0C1E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A50C4AF1-734B-4AA6-8B37-8B2994D0C1E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A50C4AF1-734B-4AA6-8B37-8B2994D0C1E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE31CAD1-5D9C-4340-A90C-C4D0A53435CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE31CAD1-5D9C-4340-A90C-C4D0A53435CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE31CAD1-5D9C-4340-A90C-C4D0A53435CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE31CAD1-5D9C-4340-A90C-C4D0A53435CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

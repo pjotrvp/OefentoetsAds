@@ -1,23 +1,23 @@
 ﻿namespace DeepCopy
 {
-    class ListNode<T> : ICloneable where T : ICloneable
+    internal class ListNode<T> : ICloneable where T : ICloneable
     {
-        private ListNode<T> Next;
-        private T Data;
+        private ListNode<T> _next;
+        private T _data;
 
         public ListNode(ListNode<T> previous, T data)
         {
-            if (previous != null) previous.Next = this;
-            Data = data;
+            if (previous != null) previous._next = this;
+            _data = data;
         }
 
         public ListNode(ListNode<T> other)
         {
-            if (other.Next != null)
+            if (other._next != null)
             {
-                Next = (ListNode<T>)other.Next.Clone();
+                _next = (ListNode<T>)other._next.Clone();
             }
-            Data = (T)other.Data.Clone();
+            _data = (T)other._data.Clone();
         }
 
         public object Clone()
@@ -25,7 +25,7 @@
             return new ListNode<T>(this);
         }
 
-        public void ReplaceAt(int index, T newData)
+        public void ReplaceAt(int index, T new_data)
         {
             if (index < 0)
             {
@@ -33,23 +33,23 @@
             }
             else if (index == 0)
             {
-                Data = newData;
+                _data = new_data;
             }
             else
             {
-                Next.ReplaceAt(index - 1, newData);
+                _next.ReplaceAt(index - 1, new_data);
             }
         }
 
         public override string ToString()
         {
-            if (Next != null)
+            if (_next != null)
             {
-                return String.Format("{0}, {1}", Data.ToString(), Next.ToString());
+                return String.Format("{0}, {1}", _data.ToString(), _next.ToString());
             }
             else
             {
-                return Data.ToString();
+                return _data.ToString();
             }
         }
     }
